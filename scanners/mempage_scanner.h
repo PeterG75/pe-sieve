@@ -97,6 +97,7 @@ public:
 
 protected:
 	ULONGLONG findPeHeader(MemPageData &memPageData);
+	bool isShellcode(MemPageData &memPageData);
 
 	bool isDeepScan;
 	HANDLE processHandle;
